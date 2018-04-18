@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MessageManager</string>
+
+    <!-- Connexion -->
+    <string name="login_user">Utilisateur</string>
+    <string name="login_password">Mot de passe</string>
+    <string name="login_remember">Se souvenir de moi</string>
+    <string name="login_valider">Valider</string>
+    <string name="login_reset">Effacer</string>
+    <string name="login_empty_user">Vous devez renseigner un nom d\'utilisateur.</string>
+    <string name="login_empty_password">Vous devez renseigner un mot de passe.</string>
+
+</resources>

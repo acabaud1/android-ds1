@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.LoginActivity">
+
+    <!-- Login progress -->
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/login_user"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginText"
+        android:layout_alignStart="@+id/loginText"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/login_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boxRemember"
+        android:layout_alignEnd="@+id/loginText"
+        android:layout_marginTop="12dp"
+        android:text="@string/login_reset" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boxRemember"
+        android:layout_alignStart="@+id/loginText"
+        android:layout_marginTop="12dp"
+        android:text="@string/login_valider" />
+
+    <CheckBox
+        android:id="@+id/boxRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordText"
+        android:layout_alignStart="@+id/loginText"
+        android:layout_marginTop="26dp"
+        android:text="@string/login_remember" />
+</RelativeLayout>
